@@ -53,6 +53,7 @@ body{
     height: 44px;
     border-radius: 10px;
     align-items:center;
+    flex-direction: row;
   }
 
   .Placeholder p{
@@ -80,21 +81,27 @@ body{
    height: 23px;
   }*/
 
+.Nav{
+    display: flex;
+    align-items: baseline;
+}
+
   .AP{
-      height: fit-content;
-      width:200px;
-      height: 20px;
       display: inline;
+      height: fit-content;
+      display: inline;
+      flex-direction: row;
   }
 
   .AP p{
-      display: flex;
+      display: inline;
     font-family: 'Inter';
-      margin: 0px;
+      margin: 0;
       font-size: 12px;
       font-weight: 700;
       width: fit-content;
       height: fit-content;
+      
   }
   
   .AP img{
