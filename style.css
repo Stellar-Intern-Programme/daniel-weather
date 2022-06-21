@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
 
 .background{
     display: flex;
@@ -26,7 +28,7 @@ body{
 }
 .right{
     background-color: #1F3B5B;
-    flex:0.4;
+    flex:0.6;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px ;
     
@@ -38,11 +40,12 @@ body{
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     display: flex;
-    gap: 24px;
-    justify-content: flex-start;
+    
     padding-left: 85px;
     padding-top: 71px;
-    
+    padding-right: 63px;
+    flex-direction:column;
+    column-gap: 27px;
 
 }
 
@@ -66,8 +69,8 @@ body{
   }
 
   .Placeholder:hover {
+
     border: 1px solid #87B6E1;
-    
 }
 
 .Placeholder img{
@@ -83,42 +86,186 @@ body{
 
 .Nav{
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
 }
 
   .AP{
-      display: inline;
+    display:flex;
+    justify-content: center;
       height: fit-content;
       display: inline;
-      flex-direction: row;
+      padding-left: 24px;
   }
 
   .AP p{
-      display: inline;
-    font-family: 'Inter';
+    display: inline;
+      font-family: 'Inter';
       margin: 0;
       font-size: 12px;
-      font-weight: 700;
+      font-weight: bold;
       width: fit-content;
       height: fit-content;
-      
+  
   }
   
   .AP img{
-    justify-content: flex-end;
     width: 10px;
     height: 5.9px;
   }
 
   .WF{
-
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 29px;
+    
   }
 
-  
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+.Images{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
 
+  .Images img{
+    width:140px;
+    height:161px;
+    border-radius:20px;
+  }
+
+  .Images img:hover{
+    transform:scale(1.1);
+    cursor:pointer;
+  }
+
+.Plus{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-flow: column wrap;
+  width: 120px;
+  height:161px; 
+  border: 1px solid black;
+  border-radius: 10px;
+
+}
+
+.Plus img{
+  height:28px;
+  width: 28px;
+}
+
+.Plus p{
+  font-family: 'Inter';
+  font-size: 12px;
+}
+
+.Plus:hover {
+  border-color: #6ea7e8;
+  color: #6ea7e8;
+  cursor:pointer;
+ 
+}
+
+.Plus:hover svg path {
+  fill: #6ea7e8;
+}
+
+.City{
+  display:flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight:700;
+  padding-left:25px;
+  padding-right: 175px;
   
+}
+
+
+
+
+.Buttons{
+  display:flex;
+  font-family:'Inter';
+  font-size:12px;
+  gap:27px;
+  font-weight: 700;color:#ACACAC;
+  margin: 0px;
+}
+
+.Buttons p:hover{
+  color:black;
+  cursor:pointer;
+}
+
+.Buttons p:nth-of-type(1) {
+  color: black;
+  font-weight: 700;
+  
+}
+.Buttons p:hover .Week{
+  color:red;
+  }
+  
+/* .Table td{
+  padding:0px;
+  width:fit-content;
+
+} */
+
+.Table{
+  font-family: 'Inter';
+  font-size: 9px;
+  padding: 0px;
+  max-height: 262px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Table tr{
+  display:flex;
+  flex-direction: row;
+  padding: 0px;
+  font-weight:400 ;
+  margin-bottom: 19px;
+  justify-content: space-between;
+  
+}
+
+.Table td{
+flex:1;
+display:flex;
+}
+
+
+
+.Picatura{
+  width: fit-content; 
+}
+
+.Rectangle{
+ 
+  width: 214px;
+height: 9px;
+background: #D9D9D9;
+border-radius: 20px;
+}
+
+.Rectangle2{
+  display: flex;
+  align-self  :center;
+  left:670px; 
+  width: 70px;
+  height: 9px;
+  background: #EA3B3B;
+  border-radius: 20px;
+  
+
+}
+
+.grade{
+  display: flex;
+  gap:15px;
+}
